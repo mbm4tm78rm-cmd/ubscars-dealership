@@ -2,7 +2,7 @@
 import { useState } from 'react';
 
 const cars = [
- { id:1, name:'2018 Dodge Charger SXT', price:'$6,000', year:2018, miles:'85,420', image:'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80', badge:'HOT DEAL', specs:'AWD • V6 • Clean Title' },
+  { id:1, name:'2026 Dodge Charger RT - Diamond Black', price:'$6,000', year:2026, miles:'1,200', image:'https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=800&q=80', badge:'$500 DOWN - 2026 NEW', specs:'AWD • 420HP Twin-Turbo • $500 Down • Total $6k' },
  { id:2, name:'2020 Mercedes G63 AMG', price:'$89,500', year:2020, miles:'32,100', image:'https://images.unsplash.com/photo-1520050206274-a1ae44613e6d?w=800&q=80', badge:'JUST ARRIVED', specs:'4MATIC • 577HP • Black' },
  { id:3, name:'2019 BMW 530i xDrive', price:'$18,900', year:2019, miles:'54,300', image:'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&q=80', badge:'LOW MILES', specs:'Turbo • Leather • Sunroof' },
  { id:4, name:'2021 Toyota Camry SE', price:'$16,500', year:2021, miles:'41,200', image:'https://images.unsplash.com/photo-1623869675781-80b34e094228?w=800&q=80', badge:'FUEL SAVER', specs:'2.5L • Apple CarPlay' },
