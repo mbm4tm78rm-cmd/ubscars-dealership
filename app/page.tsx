@@ -17,26 +17,23 @@ export default function Home(){
  const filtered=cars.filter(c=>c.name.toLowerCase().includes(q.toLowerCase()));
  return(
  <div className="min-h-screen bg-[#050505] text-white selection:bg-red-600">
- {/* HEADER */}
  <header className="sticky top-0 z-50 bg-black/80 backdrop-blur-xl border-b border-zinc-800">
   <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-   <div className="flex items-center gap-2"><div className="w-8 h-8 bg-red-600 rounded flex items-center justify-center font-black">U</div><span className="font-black tracking-widest">UBSCARS</span><span className="text-zinc-500 text-xs ml-2 hidden md:block">Lagos • US Imports</span></div>
+   <div className="flex items-center gap-2"><div className="w-8 h-8 bg-red-600 rounded flex items-center justify-center font-black">U</div><span className="font-black tracking-widest">UBSCARS</span><span className="text-zinc-500 text-xs ml-2 hidden md:block">Europe & USA • Worldwide Shipping</span></div>
    <a href={link} target="_blank" className="bg-red-600 hover:bg-red-700 px-5 py-2.5 rounded-full font-bold text-xs">WhatsApp: +1 (435) 224-5247</a>
   </div>
  </header>
 
- {/* HERO */}
  <section className="max-w-7xl mx-auto px-4 pt-12 pb-6">
   <h1 className="text-5xl md:text-7xl font-black leading-[0.9] tracking-tighter">FIND YOUR<br/><span className="text-red-600">DREAM</span> RIDE</h1>
-  <p className="text-zinc-400 mt-4 max-w-xl text-sm">Clean titles • Inspected • Financing available • Shipping to Nigeria & USA. Chat us on WhatsApp for video tour.</p>
+  <p className="text-zinc-400 mt-4 max-w-xl text-sm">Clean titles • Inspected • Financing available • Shipping across Europe & USA. Chat us on WhatsApp for video tour.</p>
   <div className="mt-8 bg-zinc-900 border border-zinc-800 p-1.5 rounded-full flex max-w-xl shadow-2xl">
    <input value={q} onChange={e=>setQ(e.target.value)} placeholder="Search Charger, G-Wagon, BMW, Camry..." className="flex-1 bg-transparent px-5 outline-none text-sm placeholder:text-zinc-600"/>
    <button className="bg-white text-black px-7 py-3 rounded-full font-bold text-sm">Search {filtered.length}</button>
   </div>
-  <div className="flex gap-2 mt-4 text-[11px]"><span className="bg-zinc-900 border border-zinc-800 px-3 py-1.5 rounded-full">✓ No Hidden Fees</span><span className="bg-zinc-900 border border-zinc-800 px-3 py-1.5 rounded-full">✓ WhatsApp Video Tour</span><span className="bg-zinc-900 border border-zinc-800 px-3 py-1.5 rounded-full">✓ Financing</span></div>
+  <div className="flex gap-2 mt-4 text-[11px]"><span className="bg-zinc-900 border border-zinc-800 px-3 py-1.5 rounded-full">✓ No Hidden Fees</span><span className="bg-zinc-900 border border-zinc-800 px-3 py-1.5 rounded-full">✓ Europe & USA Delivery</span><span className="bg-zinc-900 border border-zinc-800 px-3 py-1.5 rounded-full">✓ Financing</span></div>
  </section>
 
- {/* INVENTORY */}
  <section className="max-w-7xl mx-auto px-4 pb-20">
   <div className="grid md:grid-cols-3 gap-5 mt-8">
    {filtered.map(car=>(
@@ -54,16 +51,15 @@ export default function Home(){
    ))}
   </div>
 
-  {/* CTA */}
   <div className="mt-16 bg-gradient-to-br from-red-600 to-red-800 rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-   <div><h2 className="text-3xl font-black">Need Financing?</h2><p className="text-red-100 text-sm mt-2 max-w-md">Get approved in 5 mins via WhatsApp. Low down payment. We work with bad credit.</p></div>
-   <a href={`${link}?text=Hello%20UBSCARS%2C%20I%20need%20financing%20for%20a%20car`} target="_blank" className="bg-black text-white px-8 py-3.5 rounded-full font-bold text-sm">Apply on WhatsApp</a>
+   <div><h2 className="text-3xl font-black">Need Financing? Europe & USA</h2><p className="text-red-100 text-sm mt-2 max-w-md">Get approved in 5 mins via WhatsApp. We ship to all EU countries + all 50 US states.</p></div>
+   <a href={`${link}?text=Hello%20UBSCARS%2C%20I%20need%20financing%20for%20a%20car%20in%20Europe%20or%20USA`} target="_blank" className="bg-black text-white px-8 py-3.5 rounded-full font-bold text-sm">Apply on WhatsApp</a>
   </div>
  </section>
 
  <footer className="border-t border-zinc-900 text-center py-10 text-zinc-600 text-xs">
   <p className="font-bold text-white tracking-widest">UBSCARS</p>
-  <p className="mt-2">Lagos, Nigeria • Import & Sales • +1 (435) 224-5247</p>
+  <p className="mt-2">Europe & USA • International Sales & Worldwide Shipping • +1 (435) 224-5247</p>
   <p className="mt-1">ubscars-dealership.vercel.app © 2026</p>
  </footer>
  </div>
